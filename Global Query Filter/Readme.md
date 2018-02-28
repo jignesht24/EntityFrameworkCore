@@ -1,15 +1,13 @@
-Global Query Filters In Entity Framework Core 2.0
-
-Introduction
+### Introduction
 This feature is also refer as Model-level query filters. It allows to specify filter in the model level that are automatically applied to all queries that executed on the context on the specified type. It means that entity framework automatically adds the filter in where clause before executing the LINQ queries. Usually Global query filters are applied in OnModelCreating method of context. This filters are also automatically applied to LINQ queries involving the entity types referenced indirectly like included as navigation property.
 
-Common use of this feature are
-Soft delete - An Entity Type defines an IsDeleted property and application does not required deleted data.
-Multi-tenancy - An Entity Type defines a TenantId property
+### Common use of this feature are
+* Soft delete - An Entity Type defines an IsDeleted property and application does not required deleted data.
+* Multi-tenancy - An Entity Type defines a TenantId property
 
-Example
+#### Example
 The following example shows, how to applied global query filter to implement soft-delete. To demostrate the example, I have create Employee table and it has IsDeleted column that is used to define whether record is deleted or not.
-
+```
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -33,8 +31,9 @@ INSERT [dbo].[Employee] ([Id], [Name], [IsDeleted]) VALUES (1, N'Jignesh', 0)
 INSERT [dbo].[Employee] ([Id], [Name], [IsDeleted]) VALUES (2, N'Rakesh', 0)
 INSERT [dbo].[Employee] ([Id], [Name], [IsDeleted]) VALUES (3, N'Tejas', 0)
 INSERT [dbo].[Employee] ([Id], [Name], [IsDeleted]) VALUES (4, N'Rajesh', 1)
+```
 
-<<image 1.png>>
+![alt text](ScreenShots/1.png "")
 
 First define entities and context class
 
