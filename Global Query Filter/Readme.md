@@ -105,6 +105,7 @@ using (EntityModelContext context = new EntityModelContext())
 }
 ```
 Output
+
 ![alt text](ScreenShots/2.png "")
 
 Disabling Global Filters
@@ -120,6 +121,7 @@ foreach (var d in data1)
 }
 ```
 Output
+
 ![alt text](ScreenShots/3.png "")
 
 ### Limitations
