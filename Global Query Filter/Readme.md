@@ -38,7 +38,7 @@ INSERT [dbo].[Employee] ([Id], [Name], [IsDeleted]) VALUES (4, N'Rajesh', 1)
 First define entities and context class
 
 Employee.cs
-
+```
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -53,9 +53,10 @@ namespace GlobalFilterExample.Model
         public bool IsDeleted { get; set; }
     }
 }
+```
 
 EntityModelContext.cs
-
+```
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -76,9 +77,9 @@ namespace GlobalFilterExample.Model
         public DbSet<Employee> Employees { get; set; }
     }
 }
-
+```
 Next step, configure the global query filter in OnModelCreating  method of context class. Using HasQueryFilter API, we can applied global filter on entity type.
-
+```
 protected override void OnModelCreating(ModelBuilder modelBuilder)
 {
     modelBuilder.Entity<Employee>()
@@ -86,11 +87,11 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 
     base.OnModelCreating(modelBuilder);
 }
-
+```
 The expression passed in HasQueryFilter method is automatically applied to any LINQ queries for Employee Type.
 
 Example code
-
+```
 using (EntityModelContext context = new EntityModelContext())
 {
     Console.WriteLine("---------------With Global Query Filters---------------");
@@ -102,29 +103,32 @@ using (EntityModelContext context = new EntityModelContext())
 
     Console.ReadLine();
 }
-
+```
 Output
-<< 2.png>>
+
+![alt text](ScreenShots/2.png "")
 
 Disabling Global Filters
 The global filters are applied any LINQ query. In some cases, we do not required these filters. The global filters may be disabled for individual LINQ queries by using the IgnoreQueryFilters() method.
 
 Example
+```
 var data1 = context.Employees
     .IgnoreQueryFilters().ToList();
 foreach (var d in data1)
 {
     Console.WriteLine("{0}\t{1}", d.Id, d.Name);
 }
-
+```
 Output
-<<3.png>>
 
-Limitations
+![alt text](ScreenShots/3.png "")
+
+### Limitations
 It has following Limitation
-It cannot contain references to navigation properties
-It can defined only at root Entity Type of an inheritance hierarchy
-IgnoreQueryFilters method ignores all the filters on the entity type i.e. we cannot remove perticular filter using this method
+* It cannot contain references to navigation properties
+* It can defined only at root Entity Type of an inheritance hierarchy
+* IgnoreQueryFilters method ignores all the filters on the entity type i.e. we cannot remove perticular filter using this method
 
-Summary
+### Summary
 The Global Query Filter or Model-Level Query Filter is very useful feature introduced in entity framework code. It help us to applied filter on entity type that might forget by developer during devlopment. 
