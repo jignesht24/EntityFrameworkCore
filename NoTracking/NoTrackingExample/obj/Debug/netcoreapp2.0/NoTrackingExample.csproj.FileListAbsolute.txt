@@ -1,0 +1,11 @@
+D:\EF2.0\EntityFrameworkExample\NoTrackingExample\bin\Debug\netcoreapp2.0\NoTrackingExample.deps.json
+D:\EF2.0\EntityFrameworkExample\NoTrackingExample\bin\Debug\netcoreapp2.0\NoTrackingExample.runtimeconfig.json
+D:\EF2.0\EntityFrameworkExample\NoTrackingExample\bin\Debug\netcoreapp2.0\NoTrackingExample.runtimeconfig.dev.json
+D:\EF2.0\EntityFrameworkExample\NoTrackingExample\bin\Debug\netcoreapp2.0\NoTrackingExample.dll
+D:\EF2.0\EntityFrameworkExample\NoTrackingExample\bin\Debug\netcoreapp2.0\NoTrackingExample.pdb
+D:\EF2.0\EntityFrameworkExample\NoTrackingExample\obj\Debug\netcoreapp2.0\NoTrackingExample.csprojResolveAssemblyReference.cache
+D:\EF2.0\EntityFrameworkExample\NoTrackingExample\obj\Debug\netcoreapp2.0\NoTrackingExample.csproj.CoreCompileInputs.cache
+D:\EF2.0\EntityFrameworkExample\NoTrackingExample\obj\Debug\netcoreapp2.0\NoTrackingExample.AssemblyInfoInputs.cache
+D:\EF2.0\EntityFrameworkExample\NoTrackingExample\obj\Debug\netcoreapp2.0\NoTrackingExample.AssemblyInfo.cs
+D:\EF2.0\EntityFrameworkExample\NoTrackingExample\obj\Debug\netcoreapp2.0\NoTrackingExample.dll
+D:\EF2.0\EntityFrameworkExample\NoTrackingExample\obj\Debug\netcoreapp2.0\NoTrackingExample.pdb
