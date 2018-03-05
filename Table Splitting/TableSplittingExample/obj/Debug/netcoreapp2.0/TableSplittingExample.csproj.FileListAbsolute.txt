@@ -1,0 +1,11 @@
+D:\EF2.0\EntityFrameworkExample\TableSplittingExample\bin\Debug\netcoreapp2.0\TableSplittingExample.deps.json
+D:\EF2.0\EntityFrameworkExample\TableSplittingExample\bin\Debug\netcoreapp2.0\TableSplittingExample.runtimeconfig.json
+D:\EF2.0\EntityFrameworkExample\TableSplittingExample\bin\Debug\netcoreapp2.0\TableSplittingExample.runtimeconfig.dev.json
+D:\EF2.0\EntityFrameworkExample\TableSplittingExample\bin\Debug\netcoreapp2.0\TableSplittingExample.dll
+D:\EF2.0\EntityFrameworkExample\TableSplittingExample\bin\Debug\netcoreapp2.0\TableSplittingExample.pdb
+D:\EF2.0\EntityFrameworkExample\TableSplittingExample\obj\Debug\netcoreapp2.0\TableSplittingExample.csprojResolveAssemblyReference.cache
+D:\EF2.0\EntityFrameworkExample\TableSplittingExample\obj\Debug\netcoreapp2.0\TableSplittingExample.csproj.CoreCompileInputs.cache
+D:\EF2.0\EntityFrameworkExample\TableSplittingExample\obj\Debug\netcoreapp2.0\TableSplittingExample.AssemblyInfoInputs.cache
+D:\EF2.0\EntityFrameworkExample\TableSplittingExample\obj\Debug\netcoreapp2.0\TableSplittingExample.AssemblyInfo.cs
+D:\EF2.0\EntityFrameworkExample\TableSplittingExample\obj\Debug\netcoreapp2.0\TableSplittingExample.dll
+D:\EF2.0\EntityFrameworkExample\TableSplittingExample\obj\Debug\netcoreapp2.0\TableSplittingExample.pdb
